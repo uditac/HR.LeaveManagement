@@ -12,5 +12,7 @@ namespace HR.Leavemanagement.Application.Exceptions
         {
                 
         }
+
+
     }
 }

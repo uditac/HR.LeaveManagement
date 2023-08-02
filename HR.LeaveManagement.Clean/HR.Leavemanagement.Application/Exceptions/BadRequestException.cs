@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace HR.Leavemanagement.Application.Exceptions
 {
-    internal class BadRequest
+    public class BadRequestException : Exception
     {
+        public BadRequestException(string message) : base(message)
+        { 
+        }
     }
 }

@@ -1,0 +1,5 @@
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Persistence\obj\Debug\net7.0\HR.LeaveManagement.Persistence.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Persistence\obj\Debug\net7.0\HR.LeaveManagement.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Persistence\obj\Debug\net7.0\HR.LeaveManagement.Persistence.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Persistence\obj\Debug\net7.0\HR.LeaveManagement.Persistence.AssemblyInfo.cs
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Persistence\obj\Debug\net7.0\HR.LeaveManagement.Persistence.csproj.CoreCompileInputs.cache

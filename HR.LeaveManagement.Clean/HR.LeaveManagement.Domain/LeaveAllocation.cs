@@ -6,6 +6,8 @@ public class LeaveAllocation : BaseEntity
 {
     public new int  Id { get; set; }
 
+    public string EmployeeId { get; set; } = string.Empty;
+
     public int NumberOfDays { get; set; }
 
     public LeaveType? LeaveType { get; set; }

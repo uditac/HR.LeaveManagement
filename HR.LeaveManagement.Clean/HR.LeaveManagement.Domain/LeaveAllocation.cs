@@ -4,7 +4,7 @@ namespace HR.LeaveManagement.Domain;
 
 public class LeaveAllocation : BaseEntity
 {
-    public int Id { get; set; }
+    public int  Id { get; set; }
 
     public int NumberOfDays { get; set; }
 

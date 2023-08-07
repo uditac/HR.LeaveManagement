@@ -16,6 +16,7 @@ namespace HR.Leavemanagement.Application.Features.Commands.CreateLeaveType
     {
         private readonly IMapper _mapper;
         private readonly ILeaveTypeRepository _leaveTypeRepository;
+      
         public CreateLeaveTypeCommandHandler(IMapper mapper, ILeaveTypeRepository leaveTypeRepository)
         {
             _mapper = mapper;
@@ -25,7 +26,7 @@ namespace HR.Leavemanagement.Application.Features.Commands.CreateLeaveType
         public async Task<int> Handle(CreateLeaveTypeCommand request, CancellationToken cancellationToken)
         {
             // Validate incoming data
-            var validator = new CreateLeaveTypeCommandValidator();
+          //  var validator = new _leaveTypeRepository.CreateLeaveTypeCommandValidator();
             var validationResult = await validator.ValidateAsync(request);
 
             if (validationResult.Errors.Any())

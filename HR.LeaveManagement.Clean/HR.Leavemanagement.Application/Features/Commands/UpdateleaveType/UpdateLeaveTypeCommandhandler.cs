@@ -25,7 +25,10 @@ namespace HR.Leavemanagement.Application.Features.Commands.UpdateleaveType
         public async Task<Unit> Handle(UpdateLeaveTypeCommand request, CancellationToken cancellationToken)
         {
             //Validate incoming data
+            var validator = new UpdateLeaveTypeCommandValidator(_leaveTypeRepository);
+            var validationResult = await validator.ValidateAsync(request);
             var leaveTypeToUpdate = _mapper.Map<LeaveType>(request);
+
 
 
             //Convert to Domain Entity object

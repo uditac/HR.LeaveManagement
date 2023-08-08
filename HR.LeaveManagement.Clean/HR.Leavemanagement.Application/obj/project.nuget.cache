@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yi7D/8Oo7kIPArsnCeOHuZpvV0RhkLgpxARWafIMrcoChxvdDMhn/FMuhFum/hFQXlTRHktewpRYPbyl894rzg==",
+  "dgSpecHash": "x3cDxI8rZGzcLvPeWEnt/DCAbufP9UGc1mnh0bv9NuATzZfyi7RDi27sUmG5IcgSosk+He3ae7zolmxexWusdg==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\repos\\HR.LeaveManagement\\HR.LeaveManagement.Clean\\HR.Leavemanagement.Application\\HR.Leavemanagement.Application.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
   ],

@@ -13,15 +13,6 @@ public class LeaveRequestRepository : GenericRepository<LeaveRequest>, ILeaveReq
         
     }
 
-    public Task CreateAsync(LeaveType entity)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task DeleteAsync(LeaveType entity)
-    {
-        throw new NotImplementedException();
-    }
 
     public Task<IReadOnlyList<LeaveType>> GetAsync(int id)
     {

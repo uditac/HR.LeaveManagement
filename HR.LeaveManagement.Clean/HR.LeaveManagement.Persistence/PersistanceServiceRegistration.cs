@@ -1,5 +1,6 @@
 ﻿using HR.LeaveManagement.Persistence.DatabaseContext;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Persistence;
 
-public class PersistanceServiceRegistration
+public static class PersistanceServiceRegistration
 {
-    public static IServiceCollection AddPersistanceServices(this IServiceCollection services)
+    public static IServiceCollection AddPersistanceServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<HRDatabaseContext>(options =>
         {

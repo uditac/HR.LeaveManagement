@@ -9,6 +9,6 @@ public interface IGenericRepository<T> where T : BaseEntity
     Task DeleteAsync(T entity);
    Task<T> GetByIdAsync(int id);
 
-    Task<IReadOnlyList<T>> GetAsync(int id);
+    Task<IReadOnlyList<T>> GetAsync();
         
 }

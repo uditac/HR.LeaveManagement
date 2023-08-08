@@ -63,9 +63,10 @@ public class LeaveAllocationRepository : GenericRepository<LeaveAllocation>, ILe
         throw new NotImplementedException();
     }
 
-    public Task<LeaveAllocation> GetUserAllocations(string userId, int leaveTypeId)
+    public async Task<LeaveAllocation> GetUserAllocations(string userId, int leaveTypeId)
     {
-        throw new NotImplementedException();
+        return await _context.LeaveAllocations.FirstOrDefaultAsync(q=> q.EmployeeId == userId
+         && q.LeaveTypeId == leaveTypeId);
     }
 
     public Task UpdateAsync(LeaveType entity)

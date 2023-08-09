@@ -14,7 +14,7 @@ public static class InfrastructureServicesRegistration
     {
         services.Configure<EmailSetings>(configuration.GetSection("EmailSettings"));
         services.AddTransient<IEmailSender, EmailSender>(); // using a new instance of email sender each time it is used.
-        services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<T>));
+        services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
         return services;
     }
 }

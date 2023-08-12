@@ -22,7 +22,7 @@ public static class ApplicationServiceRegistration
         services.AddScoped(typeof(IGenericRepository<>), typeof(IGenericRepository<>));
         services.AddScoped<ILeaveRequestRepository<LeaveRequest>, LeaveRequestRepository>();
         services.AddScoped(typeof(ILeaveAllocationRepository<>), typeof(ILeaveAllocationRepository<>));
-        services.AddScoped(typeof(ILeaveTypeRepository<>),typeof(ILeaveTypeRepository<>);)
+        services.AddScoped(typeof(ILeaveTypeRepository<>), typeof(ILeaveTypeRepository<>));
         return services;
     }
 }

@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.API\obj\Debug\net7.0\HR.LeaveManagement.API.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.API\obj\Debug\net7.0\HR.LeaveManagement.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.API\obj\Debug\net7.0\HR.LeaveManagement.API.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.API\obj\Debug\net7.0\HR.LeaveManagement.API.AssemblyInfo.cs
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.API\obj\Debug\net7.0\HR.LeaveManagement.API.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.API\obj\Debug\net7.0\HR.LeaveManagement.API.MvcApplicationPartsAssemblyInfo.cache

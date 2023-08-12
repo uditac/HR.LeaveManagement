@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using HR.Leavemanagement.Application.Contracts.Logging;
 using HR.Leavemanagement.Application.Contracts.Persistence;
 using HR.LeaveManagement.Domain;
 using MediatR;
@@ -16,14 +17,18 @@ public class GetLeaveTypesQueryHandler : IRequestHandler<GetLeaveTypesQuery, Lis
 {
     private readonly IMapper _mapper;
     private readonly ILeaveTypeRepository _leaveTypeRepository;
+    private readonly IAppLogger<GetLeaveTypesQueryHandler> _appLogger;
 
 
     // We need Imapper because we need to convert.
     // Since we need to query the database, we need our persistance layer, contracts (abstraction)
-    public GetLeaveTypesQueryHandler(IMapper mapper, ILeaveTypeRepository leaveTypeRepository)
+    public GetLeaveTypesQueryHandler(IMapper mapper, ILeaveTypeRepository leaveTypeRepository,
+        IAppLogger<GetLeaveTypesQueryHandler> appLogger)
     {
         _mapper = mapper;
         _leaveTypeRepository = leaveTypeRepository;
+        _appLogger = appLogger;
+
     }
     public async Task<List<LeaveTypeDto>> Handle(GetLeaveTypesQuery request, CancellationToken cancellationToken)
     {

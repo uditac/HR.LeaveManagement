@@ -1,18 +1,26 @@
 ﻿
-
 using HR.Leavemanagement.Application.Contracts.Persistence;
 using HR.LeaveManagement.Domain;
 using HR.LeaveManagement.Persistence.DatabaseContext;
 using HR.LeaveManagement.Persistence.DatabaseContext.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-public class LeaveRequestRepository : GenericRepository<LeaveRequest>, ILeaveRequestRepository
+public class LeaveRequestRepository : GenericRepository<LeaveRequest>,ILeaveRequestRepository
 {
     public LeaveRequestRepository(HRDatabaseContext context) :base(context)
     {
         
     }
 
+    public Task CreateAsync(LeaveType entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task DeleteAsync(LeaveType entity)
+    {
+        throw new NotImplementedException();
+    }
 
     public Task<IReadOnlyList<LeaveType>> GetAsync(int id)
     {
@@ -47,5 +55,18 @@ public class LeaveRequestRepository : GenericRepository<LeaveRequest>, ILeaveReq
         return leaveRequests;
     }
 
- 
+    public Task UpdateAsync(LeaveType entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    Task<IReadOnlyList<LeaveType>> IGenericRepository<LeaveType>.GetAsync()
+    {
+        throw new NotImplementedException();
+    }
+
+    Task<LeaveType> IGenericRepository<LeaveType>.GetByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
 }

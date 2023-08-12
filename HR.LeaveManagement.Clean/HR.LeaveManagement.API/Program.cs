@@ -1,8 +1,24 @@
+using HR.Leavemanagement.Application;
+using HR.LeaveManagement.Persistence;
+using Microsoft.Extensions.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.AddInfrastructureServices(builder.Configuration);
+builder.Services.AddPersistanceServices(builder.Configuration);
+
 builder.Services.AddControllers();
+
+//API can be called by anaybody
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("all", builder => builder.AllowAnyOrigin()
+    .AllowAnyHeader().
+    AllowAnyMethod());
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

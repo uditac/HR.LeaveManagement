@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Application.UnitTests\bin\Debug\net7.0\CoverletSourceRootsMapping
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Application.UnitTests\obj\Debug\net7.0\HR.LeaveManagement.Application.UnitTests.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Application.UnitTests\obj\Debug\net7.0\HR.LeaveManagement.Application.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Application.UnitTests\obj\Debug\net7.0\HR.LeaveManagement.Application.UnitTests.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Application.UnitTests\obj\Debug\net7.0\HR.LeaveManagement.Application.UnitTests.AssemblyInfo.cs
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Application.UnitTests\obj\Debug\net7.0\HR.LeaveManagement.Application.UnitTests.csproj.CoreCompileInputs.cache

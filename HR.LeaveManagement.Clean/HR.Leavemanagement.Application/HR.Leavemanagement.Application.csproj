@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\LeaveAllocation\Commands\" />
-    <Folder Include="Features\LeaveAllocation\Queries\GetLeaveAllocationDetails\" />
+    <Folder Include="Features\LeaveAllocation\Commands\DeleteLeaveAllocation\" />
+    <Folder Include="Features\LeaveAllocation\Commands\UpdateLeaveAllocation\" />
   </ItemGroup>
 
 </Project>

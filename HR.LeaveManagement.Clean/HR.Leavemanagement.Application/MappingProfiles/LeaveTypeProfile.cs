@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using HR.Leavemanagement.Application.Features.Commands.CreateLeaveType;
+using HR.Leavemanagement.Application.Features.Commands.UpdateleaveType;
 using HR.Leavemanagement.Application.Features.Queries.GetAllLeaveTypes;
 using HR.Leavemanagement.Application.Features.Queries.GetLeaveTypeDetails;
 using HR.LeaveManagement.Domain;
@@ -24,6 +26,8 @@ public class LeaveTypeProfile : Profile
     {
         CreateMap<LeaveTypeDto,LeaveType>().ReverseMap();  //Mapping conf between type a to type b and reverse map, dto to domin entity and back
         CreateMap<LeaveType, LeaveTypeDetailsDto>();
+        CreateMap<CreateLeaveTypeCommand,LeaveType>();
+        CreateMap<UpdateLeaveTypeCommand,LeaveType>();
             
     }
 }

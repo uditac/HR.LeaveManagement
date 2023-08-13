@@ -1,5 +1,6 @@
 using HR.Leavemanagement.Application;
 using HR.LeaveManagement.Persistence;
+using HR.LeaveManagement.Infrastructure;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddApplicationServices(builder.Configuration);
-builder.Services.AddInfrastructureServices(builder.Configuration);
+//builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddPersistanceServices(builder.Configuration);
 
 builder.Services.AddControllers();

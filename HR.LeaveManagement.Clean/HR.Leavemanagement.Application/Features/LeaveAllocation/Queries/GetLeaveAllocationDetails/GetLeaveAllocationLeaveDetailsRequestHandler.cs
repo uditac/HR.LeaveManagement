@@ -25,7 +25,7 @@ public class GetLeaveAllocationLeaveDetailsRequestHandler : IRequestHandler<GetL
     public Task<LeaveAllocationDetailsDto> Handle(GetLeaveAllocationDetailQuery request, CancellationToken cancellationToken)
     {
         var leaveAllocationDetails = _leaveAllocationRepository.GetLeaveAllocationWithDetails(request.Id);
-        return _mapper.Map(leaveAllocationDetails);
+        return _mapper.Map<LeaveAllocationDetailsDto>(leaveAllocationDetails);
     }
 }
 

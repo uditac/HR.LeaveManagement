@@ -15,3 +15,5 @@ C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveM
 C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Persistence\obj\Debug\net7.0\refint\HR.LeaveManagement.Persistence.dll
 C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Persistence\obj\Debug\net7.0\HR.LeaveManagement.Persistence.pdb
 C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Persistence\obj\Debug\net7.0\ref\HR.LeaveManagement.Persistence.dll
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Persistence\bin\Debug\net7.0\HR.LeaveManagement.Persistence.runtimeconfig.json
+C:\Users\User\source\repos\HR.LeaveManagement\HR.LeaveManagement.Clean\HR.LeaveManagement.Persistence\obj\Debug\net7.0\HR.LeaveManagement.Persistence.genruntimeconfig.cache

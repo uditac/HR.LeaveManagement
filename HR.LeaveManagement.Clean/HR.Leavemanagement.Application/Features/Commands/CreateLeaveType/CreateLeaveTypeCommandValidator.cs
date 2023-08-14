@@ -1,10 +1,5 @@
 ﻿using FluentValidation;
 using HR.Leavemanagement.Application.Contracts.Persistence;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HR.Leavemanagement.Application.Features.Commands.CreateLeaveType
 {
@@ -26,12 +21,13 @@ namespace HR.Leavemanagement.Application.Features.Commands.CreateLeaveType
                 .MustAsync(LeaveTypeNameUnique)
                 .WithMessage("Leave Type already exists");
 
-            this._leaveTypeRepository = leaveTypeRepository;
+            _leaveTypeRepository = leaveTypeRepository;
         }
 
-        private Task<bool> LeaveTypeNameUnique(CreateLeaveTypeCommand command, CancellationToken cancellationToken)
+        private async Task<bool> LeaveTypeNameUnique(CreateLeaveTypeCommand command, CancellationToken cancellationToken)
         {
-            return _leaveTypeRepository.IsLeaveTypeUnique(command.Name);
+            var a = await _leaveTypeRepository.IsLeaveTypeUnique(command.Name);
+            return a;
         }
     }
 }

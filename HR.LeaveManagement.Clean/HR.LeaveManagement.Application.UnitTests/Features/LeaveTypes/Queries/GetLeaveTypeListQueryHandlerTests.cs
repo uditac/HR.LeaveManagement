@@ -18,7 +18,7 @@ public class GetLeaveTypeListQueryHandlerTests
 {
     private readonly Mock<ILeaveTypeRepository> _mockRepo;
     private readonly IMapper _mapper;
-    private readonly IAppLogger _mockAppLogger;
+    private readonly Mock<IAppLogger<GetLeaveTypesQueryHandler>> _mockAppLogger;
     public GetLeaveTypeListQueryHandlerTests()
     {
         _mockRepo = MockLeaveTypeRepsoitory.GetLeaveTypeMockLeaveTypeRepository();
@@ -35,13 +35,13 @@ public class GetLeaveTypeListQueryHandlerTests
     }
 
     [Fact]
-    public async Task GetLeaveTypeListTest()
+    public async Task GetLeaveTypeListTests()
     {
-        var handler = new GetLeaveTypesQueryHandler(_mapper, _mockRepo.Object,_mockAppLogger.Object);
+        var handler = new GetLeaveTypesQueryHandler(_mapper, _mockRepo.Object);
 
         var result = await handler.Handle(new GetLeaveTypesQuery(),CancellationToken.None);
 
         result.ShouldBeOfType<List<LeaveTypeDto>>();
-        result.Count.ShouldBe(1);
+        result.Count.ShouldBe(3);
     }
 }

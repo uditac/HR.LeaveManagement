@@ -15,7 +15,8 @@ public class CreateLeaveAllocationCommandHandler : IRequestHandler<CreateLeaveAl
     private readonly ILeaveAllocationRepository _leaveAllocationRepository;
     private readonly ILeaveTypeRepository _leaveTypeRepository;
 
-    public CreateLeaveAllocationCommandHandler(IMapper mapper, ILeaveAllocationRepository leaveAllocationRepository,
+    public CreateLeaveAllocationCommandHandler(IMapper mapper, 
+        ILeaveAllocationRepository leaveAllocationRepository,
         ILeaveTypeRepository leaveTypeRepository)
     {
         _mapper = mapper;
@@ -33,7 +34,7 @@ public class CreateLeaveAllocationCommandHandler : IRequestHandler<CreateLeaveAl
         var leaveType = await _leaveTypeRepository.GetByIdAsync(request.LeaveTypeId);
 
         var leaveAllocation = _mapper.Map<HR.LeaveManagement.Domain.LeaveAllocation>(request);
-        await _leaveAllocationRepository.CreateAsync(leaveAllocation);
+   //     await _leaveAllocationRepository.CreateAsync(leaveAllocation.ToString);
         return Unit.Value;
 
     }

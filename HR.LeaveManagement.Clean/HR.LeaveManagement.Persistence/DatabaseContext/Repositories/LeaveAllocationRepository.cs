@@ -74,6 +74,11 @@ public class LeaveAllocationRepository : GenericRepository<LeaveAllocation>, ILe
         throw new NotImplementedException();
     }
 
+    Task<IReadOnlyList<LeaveType>> IGenericRepository<LeaveType>.GetAsync()
+    {
+        throw new NotImplementedException();
+    }
+
     Task<LeaveType> IGenericRepository<LeaveType>.GetByIdAsync(int id)
     {
         throw new NotImplementedException();

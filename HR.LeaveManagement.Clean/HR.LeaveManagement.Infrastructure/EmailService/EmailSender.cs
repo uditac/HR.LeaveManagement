@@ -22,20 +22,27 @@ namespace HR.LeaveManagement.Infrastructure.EmailService
      public async Task<bool> SendEmail(EmailMessage email)
         {
             var client = new SendGridClient(_emailSetings.ApiKey);
-            var to = new SendGridClient(email.To);
+            var to = new EmailAddress(email.To);
             var from = new EmailAddress
             {
                 Email = _emailSetings.FromAddress,
                 Name = _emailSetings.FromName
 
             };
+            var htmlContent = string.Empty;
 
-            var message = MailHelper.CreateSingleEmail(from,to, email.Body, email.Subject);
+            var message = MailHelper.CreateSingleEmail(from, to, email.Subject,email.Body,htmlContent);
+            
             var response = await client.SendEmailAsync(message);
 
             
 
             return response.IsSuccessStatusCode;
+        }
+
+        Task<bool> IEmailSender.EmailSender(EmailMessage email)
+        {
+            throw new NotImplementedException();
         }
     }
 }

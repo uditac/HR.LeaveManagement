@@ -2,13 +2,10 @@
 using HR.Leavemanagement.Application.Contracts.Logging;
 using HR.Leavemanagement.Application.Contracts.Persistence;
 using HR.Leavemanagement.Application.Exceptions;
+using HR.Leavemanagement.Application.Features.Queries.GetAllLeaveTypes;
 using HR.LeaveManagement.Domain;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace HR.Leavemanagement.Application.Features.Queries.GetLeaveTypeDetails;
 
@@ -19,14 +16,15 @@ public class GetLeaveTypeDetailsQueryHandler : IRequestHandler<GetLeaveTypeDetai
 {
     private readonly IMapper _mapper;
     private readonly ILeaveTypeRepository _leaveTypeRepository;
-    private readonly IAppLogger<GetLeaveTypeDetailsQueryHandler> _logger;
+  // private readonly IAppLogger<GetLeaveTypeDetailsQueryHandler> _logger;
 
-    public GetLeaveTypeDetailsQueryHandler(IMapper mapper, ILeaveTypeRepository leaveTypeRepository,
-        IAppLogger<GetLeaveTypeDetailsQueryHandler> logger)
+    public GetLeaveTypeDetailsQueryHandler(IMapper mapper, ILeaveTypeRepository leaveTypeRepository
+     //   ,IAppLogger<GetLeaveTypeDetailsQueryHandler> logger
+        )
     {
-        _mapper = mapper;
-        _leaveTypeRepository = leaveTypeRepository;
-        _logger = logger;
+        this._mapper = mapper;
+        this._leaveTypeRepository = leaveTypeRepository;
+     //   this._logger = logger;
     }
 
     public async Task<LeaveTypeDetailsDto> Handle(GetLeaveTypeDetailsQuery request, CancellationToken cancellationToken)
@@ -43,7 +41,7 @@ public class GetLeaveTypeDetailsQueryHandler : IRequestHandler<GetLeaveTypeDetai
          var data = _mapper.Map<LeaveTypeDetailsDto>(leaveTypes);
 
         // logs
-        _logger.LogInformation("Leave Types retrieved succesfully");
+    //   _logger.LogInformation("Leave Types retrieved succesfully");
         //return DTO object
         return data;
     }

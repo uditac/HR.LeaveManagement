@@ -60,9 +60,9 @@
               "target": "Package",
               "version": "[11.6.0, )"
             },
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
+            "MediatR": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[12.1.1, )"
             },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",

@@ -2,12 +2,7 @@
 using HR.LeaveManagement.Domain.Common;
 using HR.LeaveManagement.Persistence.DatabaseContext.Configurations;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace HR.LeaveManagement.Persistence.DatabaseContext
 {

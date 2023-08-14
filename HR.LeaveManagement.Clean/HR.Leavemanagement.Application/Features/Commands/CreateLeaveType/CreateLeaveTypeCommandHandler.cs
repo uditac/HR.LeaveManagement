@@ -3,12 +3,6 @@ using HR.Leavemanagement.Application.Contracts.Persistence;
 using HR.Leavemanagement.Application.Exceptions;
 using HR.LeaveManagement.Domain;
 using MediatR;
-using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HR.Leavemanagement.Application.Features.Commands.CreateLeaveType
 {

@@ -25,7 +25,7 @@ namespace HR.Leavemanagement.Application.Features.Commands.CreateLeaveType
 
             if (validationResult.Errors.Any())
             {
-                throw new BadRequestException("Invalid leave Type",validationResult);
+                throw new BadRequestException("Invalid leave Type", validationResult);
             }
 
             // if valid then we convert to Domain Entity Object

@@ -10,7 +10,7 @@ namespace HR.LeaveManagement.Domain;
 
 public class LeaveType : BaseEntity
 {
-    [StringLength(100)]
+   
     public string Name { get; set; } = string.Empty;
 
     public int DefaultDays { get; set; }

@@ -3,7 +3,6 @@ using HR.LeaveManagement.Domain.Common;
 using HR.LeaveManagement.Persistence.DatabaseContext.Configurations;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace HR.LeaveManagement.Persistence.DatabaseContext
 {
     public class HRDatabaseContext : DbContext
@@ -21,8 +20,6 @@ namespace HR.LeaveManagement.Persistence.DatabaseContext
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(HRDatabaseContext).Assembly);
 
-            modelBuilder.ApplyConfiguration(new LeaveTypeConfiguration());
-
 
             base.OnModelCreating(modelBuilder);
         }
@@ -31,10 +28,10 @@ namespace HR.LeaveManagement.Persistence.DatabaseContext
             foreach(var entry in base.ChangeTracker.Entries<BaseEntity>()
                 .Where(q => q.State == EntityState.Added || q.State ==  EntityState.Modified).ToList()) 
             {
-                entry.Entity.DateModified = DateTime.UtcNow;
+                entry.Entity.DateModified = DateTime.Now;
                 if(entry.State == EntityState.Added)
                 {
-                    entry.Entity.DateCreated = DateTime.UtcNow;
+                    entry.Entity.DateCreated = DateTime.Now;
                 }
             }
             return base.SaveChangesAsync(cancellationToken);

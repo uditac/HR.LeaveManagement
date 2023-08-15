@@ -9,11 +9,19 @@ A proof of concept on SOLID Principlesa nd Clean architechture with Automapper a
 
 
 
-###### header H6 Important links
-###### header H6  https://code-maze.com/cqrs-mediatr-in-aspnet-core/      https://www.youtube.com/watch?v=yJ7HpGG9tJ0
-https://josipmisko.com/posts/c-sharp-class-vs-record
-###### header H6  https://www.connectionstrings.com/postgresql/
-###### header H6 https://learn.microsoft.com/en-us/ef/core/cli/powershell
-###### header H6 https://learn.microsoft.com/en-us/ef/core/cli/dotnet
+##### Important links
+######  https://code-maze.com/cqrs-mediatr-in-aspnet-core/     
+###### https://www.youtube.com/watch?v=yJ7HpGG9tJ0
+###### https://josipmisko.com/posts/c-sharp-class-vs-record
+###### https://www.connectionstrings.com/postgresql/
+###### https://learn.microsoft.com/en-us/ef/core/cli/powershell
+###### https://learn.microsoft.com/en-us/ef/core/cli/dotnet
+
+
+
+
+
+
+
     
 * https://abhiappmobiledeveloper.medium.com/guide-to-writing-on-readme-md-markdown-file-for-github-project-8aad4e4e2a15#:~:text=To%20use%20the%20GitHub%20file,GitHub%20documentation%20on%20editing%20files.

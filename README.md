@@ -1,8 +1,13 @@
 # HR.LeaveManagement
 A proof of concept on SOLID Principlesa nd Clean architechture with Automapper and Mediatr
 
-###### header H6 Important links
-<a href="URL_REDIRECT" target="blank"><img align="center" src="https://miro.com/app/board/uXjVM6eEpcE=/" height="100" /></a>
+![image](https://github.com/uditac/HR.LeaveManagement/assets/13919728/8b4f7253-a72a-4099-8314-481f8bc8ed26)
+
+
+
+
+
+
 
 ###### header H6 Important links
 ###### header H6  https://code-maze.com/cqrs-mediatr-in-aspnet-core/      https://www.youtube.com/watch?v=yJ7HpGG9tJ0

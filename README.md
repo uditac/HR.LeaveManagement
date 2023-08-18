@@ -1,5 +1,7 @@
 # HR.LeaveManagement
-A proof of concept on SOLID Principlesa nd Clean architechture with Automapper and Mediatr
+A proof of concept on SOLID Principlesa nd Clean architechture with Automapper and Mediatr pattern.
+
+ adocker container is being made, where the postgres sql image is pulled.That serving as a database.
 
 ![image](https://github.com/uditac/HR.LeaveManagement/assets/13919728/8b4f7253-a72a-4099-8314-481f8bc8ed26)
 

@@ -13,6 +13,7 @@ public class LeaveTypeRepository : GenericRepository<LeaveType>, ILeaveTypeRepos
 
     public async Task<bool> IsLeaveTypeUnique(string name)
     {
+       
         return true;
        
     }

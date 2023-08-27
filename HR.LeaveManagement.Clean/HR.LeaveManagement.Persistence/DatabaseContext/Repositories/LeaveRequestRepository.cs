@@ -49,10 +49,10 @@ public class LeaveRequestRepository : GenericRepository<LeaveRequest>,ILeaveRequ
 
     public async Task<List<LeaveRequest>> GetLeaveRequestWithDetails(string userId)
     {
-        //var leaveRequests = await _context.LeaveRequests.Where(q=> q.RequestingEmployeeId == userId)
-        //    .Include(q => q.LeaveType)
-        //    .ToListAsync();
-        //return leaveRequests;
+        var leaveRequests = await _context.LeaveRequests.Where(q => q.RequestingEmployeeId == userId)
+            .Include(q => q.LeaveType)
+            .ToListAsync();
+        return leaveRequests;
 
         throw new NotImplementedException();
     }

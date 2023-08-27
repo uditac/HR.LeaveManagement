@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using HR.Leavemanagement.Application.Contracts.Logging;
 using HR.Leavemanagement.Application.Contracts.Persistence;
-using HR.Leavemanagement.Application.Features.Queries.GetAllLeaveTypes;
+using HR.Leavemanagement.Application.Features.LeaveType.Queries.GetAllLeaveTypes;
 using HR.Leavemanagement.Application.MappingProfiles;
 using HR.LeaveManagement.Application.UnitTests.Mocks;
 using Moq;

@@ -1,4 +1,4 @@
-using HR.Leavemanagement.Application.Features.Queries.GetAllLeaveTypes;
+using HR.Leavemanagement.Application.Features.LeaveType.Queries.GetAllLeaveTypes;
 using HR.LeaveManagement.Domain;
 using HR.LeaveManagement.Domain.Common;
 using HR.LeaveManagement.Persistence.DatabaseContext;

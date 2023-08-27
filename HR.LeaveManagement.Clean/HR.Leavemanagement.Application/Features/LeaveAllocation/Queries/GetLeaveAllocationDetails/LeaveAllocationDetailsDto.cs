@@ -1,5 +1,5 @@
 ﻿using HR.Leavemanagement.Application.Features.LeaveAllocation.Queries.GetLeaveAllocations;
-using HR.Leavemanagement.Application.Features.Queries.GetAllLeaveTypes;
+using HR.Leavemanagement.Application.Features.LeaveType.Queries.GetAllLeaveTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;

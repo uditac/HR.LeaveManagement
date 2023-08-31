@@ -19,7 +19,7 @@ public class UpdateLeaveRequestValidator : AbstractValidator<UpdateLeaveRequestC
         _leaveTypeRepository = leaveTypeRepository;
         _leaveRequestRepository = leaveRequestRepository;
 
-      //  Include(new BaseRequestValidator(UpdateLeaveRequestCommand));
+      //  Include(new BaseRequestValidator(_leaveTypeRepository));
 
         RuleFor(p => p.Id)
             .NotNull()

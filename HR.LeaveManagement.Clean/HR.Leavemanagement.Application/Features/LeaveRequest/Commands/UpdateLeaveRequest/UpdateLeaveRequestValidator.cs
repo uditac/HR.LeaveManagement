@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FluentValidation;
+
 
 namespace HR.Leavemanagement.Application.Features.LeaveRequest.Commands.UpdateLeaveRequest;
 
@@ -19,7 +21,7 @@ public class UpdateLeaveRequestValidator : AbstractValidator<UpdateLeaveRequestC
         _leaveTypeRepository = leaveTypeRepository;
         _leaveRequestRepository = leaveRequestRepository;
 
-      //  Include(new BaseRequestValidator(_leaveTypeRepository));
+       Include(new BaseRequestValidator(_leaveTypeRepository));
 
         RuleFor(p => p.Id)
             .NotNull()

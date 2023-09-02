@@ -2,7 +2,7 @@
 
 namespace HR.Leavemanagement.Application.Contracts.Persistence
 {
-    public interface ILeaveRequestRepository : IGenericRepository<LeaveType>
+    public interface ILeaveRequestRepository : IGenericRepository<LeaveRequest>
     {
         Task<LeaveRequest> GetLeaveRequestWithDetails(int id); //if there are any bits of data that tp be included, like leave tyeps
         Task<List<LeaveRequest>> GetLeaveRequestsWithDetails(); // if there are many leave requets

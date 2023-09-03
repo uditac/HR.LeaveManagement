@@ -5,6 +5,7 @@ using HR.LeaveManagement.Persistence.DatabaseContext;
 using HR.LeaveManagement.Persistence.DatabaseContext.Repositories;
 using Microsoft.EntityFrameworkCore;
 
+namespace HR.LeaveManagement.Persistence.Repositories;
 public class LeaveRequestRepository : GenericRepository<LeaveRequest>,ILeaveRequestRepository
 {
     public LeaveRequestRepository(HRDatabaseContext context) :base(context)
@@ -62,13 +63,5 @@ public class LeaveRequestRepository : GenericRepository<LeaveRequest>,ILeaveRequ
         throw new NotImplementedException();
     }
 
-    Task<IReadOnlyList<LeaveType>> IGenericRepository<LeaveType>.GetAsync()
-    {
-        throw new NotImplementedException();
-    }
-
-    Task<LeaveType> IGenericRepository<LeaveType>.GetByIdAsync(int id)
-    {
-        throw new NotImplementedException();
-    }
+  
 }

@@ -37,6 +37,7 @@ public class ChangeLeaveRequestApprovalCommandHandler : IRequestHandler<ChangeLe
         }
 
       leaveRequest.Approved = request.Approved;
+        await _leaveRequestRepository.UpdateAsync(leaveRequest);
 
         
         var email = new EmailMessage
@@ -46,6 +47,8 @@ public class ChangeLeaveRequestApprovalCommandHandler : IRequestHandler<ChangeLe
                    $"is updated",
             Subject = "Leave Request is updated"
         };
+
+        await _emailSender.SendEmail(email);
 
         return Unit.Value;
     }

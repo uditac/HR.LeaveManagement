@@ -1,12 +1,7 @@
 ﻿using FluentValidation;
 using HR.Leavemanagement.Application.Contracts.Persistence;
 using HR.Leavemanagement.Application.Features.LeaveRequest.Shared;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation;
+
 
 
 namespace HR.Leavemanagement.Application.Features.LeaveRequest.Commands.UpdateLeaveRequest;

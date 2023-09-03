@@ -46,7 +46,7 @@ public class CancelLeaveRequestCommandHandler : IRequestHandler<CancelLeaveReque
             Subject = "Leave Request Cancelled"
         };
 
-        await _emailSender.EmailSender(email);
+        await _emailSender.SendEmail(email);
         return Unit.Value;
     }
 }

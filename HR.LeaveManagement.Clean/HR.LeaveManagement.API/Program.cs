@@ -1,5 +1,6 @@
 using HR.Leavemanagement.Application;
 using HR.LeaveManagement.Persistence;
+using HR.LeaveManagement.Infrastructure;
 using HR.LeaveManagement.Persistence.DatabaseContext;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddApplicationServices();
+builder.Services.ConfigureInfrastructureServices(builder.Configuration);
 //builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddPersistanceServices(builder.Configuration);
 

@@ -8,14 +8,17 @@ using Microsoft.EntityFrameworkCore;
 namespace HR.LeaveManagement.Persistence.Repositories;
 public class LeaveRequestRepository : GenericRepository<LeaveRequest>,ILeaveRequestRepository
 {
+    protected readonly HRDatabaseContext _context;
     public LeaveRequestRepository(HRDatabaseContext context) :base(context)
     {
-        
+        this._context = context;
     }
 
-    public Task CreateAsync(LeaveType entity)
+    public async Task CreateAsync(LeaveRequest entity)
     {
-        throw new NotImplementedException();
+        await _context.AddAsync(entity);
+        await _context.SaveChangesAsync();
+
     }
 
     public Task DeleteAsync(LeaveType entity)

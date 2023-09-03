@@ -38,14 +38,7 @@ public class CreateLeaveRequestCommandHandler : IRequestHandler<CreateLeaveReque
         var leaveRequest = _mapper.Map<HR.LeaveManagement.Domain.LeaveRequest>(request);
         await _leaveRequestRepository.CreateAsync(leaveRequest);
 
-        //Get Requesting Employee's id
-
-        //Check on Employee's allocation
-
-
-        //If allocation aren't enough, return validation error with a message
-
-
+    
         try
         {
             var email = new EmailMessage

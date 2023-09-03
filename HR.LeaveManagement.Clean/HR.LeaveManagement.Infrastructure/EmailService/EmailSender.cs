@@ -3,12 +3,7 @@ using HR.Leavemanagement.Application.Models.Email;
 using Microsoft.Extensions.Options;
 using SendGrid;
 using SendGrid.Helpers.Mail;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+
 
 namespace HR.LeaveManagement.Infrastructure.EmailService
 {
@@ -40,9 +35,5 @@ namespace HR.LeaveManagement.Infrastructure.EmailService
             return response.IsSuccessStatusCode;
         }
 
-        Task<bool> IEmailSender.EmailSender(EmailMessage email)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

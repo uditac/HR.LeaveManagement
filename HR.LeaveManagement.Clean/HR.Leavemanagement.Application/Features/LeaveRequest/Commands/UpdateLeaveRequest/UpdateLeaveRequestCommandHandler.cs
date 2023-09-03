@@ -41,6 +41,8 @@ public class UpdateLeaveRequestCommandHandler : IRequestHandler<UpdateLeaveReque
         if(leaveRequest is null)
            throw new NotFoundException(nameof(leaveRequest),request.Id);
 
+       
+
         var validator = new UpdateLeaveRequestValidator(_leaveTypeRepository, _leaveRequestRepository);
         var validationResult = await validator.ValidateAsync(request);
 
@@ -60,7 +62,7 @@ public class UpdateLeaveRequestCommandHandler : IRequestHandler<UpdateLeaveReque
                 Subject = "Leave Request Updated"
             };
 
-            await _emailSender.EmailSender(email);
+            await _emailSender.SendEmail(email);
         }
         catch
         (Exception ex)
@@ -68,9 +70,6 @@ public class UpdateLeaveRequestCommandHandler : IRequestHandler<UpdateLeaveReque
             _appLogger.LogInformation(ex.Message);
 
         }
-
-      
-
 
         return Unit.Value;
     }

@@ -12,7 +12,7 @@ namespace HR.LeaveManagement.Domain.Common
 
         public DateTime? DateCreated { get; set; }
 
-        public string? CreatedBy { get; set; }
+        public string? CreatedBy { get; set; } = string.Empty;
 
         public DateTime? DateModified { get; set; }
 

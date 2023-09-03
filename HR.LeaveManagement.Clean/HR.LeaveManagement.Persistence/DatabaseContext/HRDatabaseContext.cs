@@ -28,10 +28,10 @@ namespace HR.LeaveManagement.Persistence.DatabaseContext
             foreach(var entry in base.ChangeTracker.Entries<BaseEntity>()
                 .Where(q => q.State == EntityState.Added || q.State ==  EntityState.Modified).ToList()) 
             {
-                entry.Entity.DateModified = DateTime.Now;
+                entry.Entity.DateModified = DateTime.UtcNow;
                 if(entry.State == EntityState.Added)
                 {
-                    entry.Entity.DateCreated = DateTime.Now;
+                    entry.Entity.DateCreated = DateTime.UtcNow;
                 }
             }
             return base.SaveChangesAsync(cancellationToken);

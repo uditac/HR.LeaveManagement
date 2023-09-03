@@ -42,8 +42,8 @@ public class LeaveRequestController : Controller
 
     // POST api/<LeaveRequestsController>
     [HttpPost]
-    [ProducesResponseType(201)]
-    [ProducesResponseType(400)]
+  //  [ProducesResponseType(201)]
+  //  [ProducesResponseType(400)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult> Post(CreateLeaveRequestCommand leaveRequest)
     {
@@ -100,8 +100,5 @@ public class LeaveRequestController : Controller
         await _mediator.Send(command);
         return NoContent();
     }
-    public IActionResult Index()
-    {
-        return View();
-    }
+  
 }

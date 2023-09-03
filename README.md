@@ -18,6 +18,7 @@ A proof of concept on SOLID Principlesa nd Clean architechture with Automapper a
 ###### https://www.connectionstrings.com/postgresql/
 ###### https://learn.microsoft.com/en-us/ef/core/cli/powershell
 ###### https://learn.microsoft.com/en-us/ef/core/cli/dotnet
+###### https://github.com/RicoSuter/NSwag
 
 
 
